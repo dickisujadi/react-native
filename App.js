@@ -33,19 +33,14 @@ export default function App() {
           data={courseGoals}
           renderItem={(dataItem) => {
             return (
-              <View key={dataItem.item.id} style={styles.goalItem}>
+              <View style={styles.goalItem}>
                 <Text style={styles.goalText}>{dataItem.item.text}</Text>
               </View>
             )
           }}
+          keyExtractor={(item, index) => {return item.id}}
+          alwaysBounceVertical={false}
         />
-        {/* <ScrollView alwaysBounceVertical={false}>
-          {courseGoals && courseGoals.length && courseGoals.map((goal, index) => 
-            {return <View style={styles.goalItem} key={index}>
-              <Text style={styles.goalText}>{goal}</Text>
-            </View>})
-          }
-        </ScrollView> */}
       </View>
     </View>
   );
