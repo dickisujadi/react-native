@@ -34,7 +34,7 @@ export default function App() {
           </View>
           ) : 
 
-          <Text key={`empty`}>List of Goals</Text>
+          <Text style={styles.emptyGoal} key={`empty`}>List of Goals ...</Text>
         }
       </View>
     </View>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: 24,
+    // paddingBottom: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#cccccc'
   },
@@ -75,5 +75,9 @@ const styles = StyleSheet.create({
   },
   goalText: {
     color: 'white'
+  },
+  emptyGoal: {
+    marginTop: '3vh',
+    alignItems: 'center',
   }
 });
