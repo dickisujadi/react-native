@@ -20,12 +20,18 @@ export default function App() {
 
 const styles = StyleSheet.create({
   appContainer: {
-    padding: 50
+    padding: 50,
+    flexDirection: 'row',
+    width: '80%',
+    height: 300,
+    justifyContent: 'space-between',
+    // alignItems: 'center' //this makes 'height' ignored (kind-of)
+    alignItems: 'stretch'
   },
   itemContainer: {
     justifyContent: 'center',
     alignItems: 'center',
-    width:  100,
-    height: 100
+    // width:  100,
+    // height: 100
   }
 });
