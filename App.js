@@ -4,10 +4,10 @@ import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 export default function App() {
   return (
     <View style={styles.appContainer}>
-      <View style={{backgroundColor: 'red', ...styles.itemContainer}}>
+      <View style={{flex: 2, backgroundColor: 'red', ...styles.itemContainer}}>
         <Text>1</Text>
       </View>
-      <View style={{backgroundColor: 'blue', ...styles.itemContainer}}>
+      <View style={{flex: 1, backgroundColor: 'blue', ...styles.itemContainer}}>
         <Text>2</Text>
       </View>
 
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '80%',
     height: 300,
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     // alignItems: 'center' //this makes 'height' ignored (kind-of)
     alignItems: 'stretch'
   },
