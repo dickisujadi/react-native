@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { View, TextInput, Button, StyleSheet } from "react-native-web"
+import { View, TextInput, Button, StyleSheet } from "react-native"
 
 function GoalInput(props) {
     const { onAddGoal } = props

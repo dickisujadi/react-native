@@ -15,7 +15,6 @@ export default function App() {
   }
 
   function deleteItemHandler(id) {
-    console.log('DELETE', id);
     setCourseGoals((currentCourseGoals) => {
       return currentCourseGoals.filter(goal => goal.id !== id)
     })
